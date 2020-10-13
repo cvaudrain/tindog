@@ -1,0 +1,269 @@
+
+/* ELEMENT SELECTORS */
+body {
+    font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h4, h5, h6 {
+  font-family: "Montserrat-Bold"
+}
+h2 {
+  font-size: 3rem;
+font-family: "Montserrat-Bold"
+}
+h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 1.1rem;
+}
+
+/* CONTAINERS */
+.container-fluid {
+  padding: 3% 15% 10%;
+}
+
+/* SECTIONS */
+.color-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+  color: black
+}
+/* HEADINGS */
+.main-heading {
+  font-family: 'Montserrat-black 900', sans-serif;
+  font-size: 3.7rem;
+  line-height: 1.5;
+  font-weight: 900
+
+}
+
+.cta-heading {
+  color: white;
+  font-size: 3.6rem;
+  margin: 4% 9% 0;
+  padding-top: 50px
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* BUTTONS */
+.btn-dark {
+  margin-right: 1%
+}
+
+.btn-outline-light {
+  margin-left: 1%
+}
+
+/*  */
+/* NAVIGATION BAR: */
+/*  */
+
+/* Giving the navbar padding */
+.navbar {
+  padding: 0 0 4.5rem
+}
+/* The following query just makes the collapsing navbar line up with the tinder logo in the awkward range
+between 992px and 1062px, where it needs to drop down about 20px on the viewport to line up  */
+@media (min-width: 992px)and (max-width: 1062px) {
+  .navbar-collapse {
+    position:relative;
+    top: 20px;
+  }
+}
+/* Making the tindog brand bigger and better on the nav bar */
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* Spacing out navbar items */
+.nav-item {
+  padding: 0 18px
+}
+/* styling the text font on the navbar items */
+.nav-link {
+  font-size: 1.4rem;
+  font-family: "Montserrat-Light";
+}
+
+/*  */
+/* Title Main Page section */
+/*  */
+
+#title {
+  background-color: #ff4c68;
+color: white;
+}
+@media (min-width: 1971px) {
+  #title {
+    padding-bottom: 140px
+  }
+}
+
+/* Download buttons */
+.download-btn {
+  margin: 5% 3% 5% 0
+}
+
+/* iphone image */
+.title-image {
+  width: 95%;
+  transform: rotate(15deg);
+position:absolute;
+
+}
+
+@media (max-width: 991px) {
+  .title-image {
+position: static;
+  transform: rotate(0);
+  width: 80%;
+  }
+  #title {
+    text-align: center;
+  }
+}
+/* The next media query is just to adjust the image size to feel a bit better in that short but awkward
+gap after the page size decreases a bunch, but before the bootstrap grid col switches from 6 to 12. afterwards, it shrinks down
+to suit the vertical alignment a bit better */
+@media (min-width: 1063px) and (max-width: 1564px) {
+  .title-image {
+    width: 85%
+  }
+}
+@media (min-width:1565px) {
+  .title-image {
+    width: 80%;
+    left:10%;
+  }
+}
+@media (min-width: 991px)and (max-width: 1062px) {
+  .title-image {
+    width: 105%;
+  }
+
+}
+/*  */
+/* FEATURES */
+/*  */
+#features {
+  background-color: white;
+  position: relative;
+
+}
+.feature-row {
+  text-align: center;
+  padding: 7% 15%
+
+}
+
+.feature-item {
+  padding-bottom: 75px;
+}
+
+.feature-icon {
+  color: #ef8172;
+  padding-bottom: 15px;
+}
+.feature-icon:hover {
+  color: #ff4c68;
+}
+/*  */
+/* TESTIMONIALS */
+/*  */
+
+/* Testimonial Section Container*/
+
+/* note: We're matching the padding to the #title section */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+color: white;
+}
+
+.testimonial-image {
+width: 11%;
+border-radius: 100%;
+margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+  text-align: center;
+}
+/*Removed padding from entire #testimonials section, and added padding just to carousel-item selected elements  */
+/*  */
+/* PRESS SECTION */
+/*  */
+
+/*  Centering, changing br color and padding appropriately*/
+#press {
+  text-align: center;
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+  margin: 20px, 20px, 50px;
+  width: 15%;
+}
+
+/* Pricing Section */
+#pricing {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.pricing-column {
+text-align: center;
+padding: 3% 2%;
+}
+
+
+/*  */
+/* CALL TO ACTION SECTION */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+margin: 0;
+}
+
+/*  */
+/* FOOTER */
+#footer {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding: 0
+}
+
+.footer-icon {
+  margin: 20px;
+
+}
+
+.centered {
+  text-align: center;
+}
+
+.construction-page {
+  position: relative;
+  top: 300px;
+}
